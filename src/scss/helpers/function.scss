@@ -1,0 +1,9 @@
+@use "sass:math";
+
+$divBaseSize: 100px;
+
+@function height($width) { 
+    @return math.div($width, $divBaseSize ) * 2
+}
+
+ 

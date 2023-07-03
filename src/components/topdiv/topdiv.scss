@@ -1,0 +1,18 @@
+.top__div {
+    background-color: $main-background;
+    height: height(200px);
+    @include xs {
+        
+    }
+    h1 {
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 4rem;
+    }
+    p {
+        color: $white;
+        font: $tertiary-font;
+        font-size: 1.6rem;
+    }
+}
+
