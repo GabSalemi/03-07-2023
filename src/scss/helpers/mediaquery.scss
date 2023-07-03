@@ -2,7 +2,7 @@ $extraSmall: 0px;
 $small: 768px; 
 $medium: 1024px; 
 $large: 1440px; 
-$extralarge: 1920px; 
+$extraLarge: 1920px; 
 
 @mixin xs {
   @media only screen and (min-width: $extraSmall) and (max-width: #{$small - 1 }) {

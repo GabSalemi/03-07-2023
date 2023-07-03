@@ -1,0 +1,34 @@
+.bottom__div {
+    background-color: $tertiary-background;
+    color: $white;
+    height: 30vh;
+    position: relative;
+    @include xs {
+        @include flexDirection(column, start);
+      }
+    
+      @include sm {
+        @include flexDirection(column, end);
+      }
+    
+      @include md {
+        @include flexDirection(row, start);
+      }
+    
+      @include lg {
+        @include flexDirection(row-reverse, end);
+      }
+    
+      @include xl {
+        @include flexDirection(row-reverse, start);
+      }
+    ul {
+        list-style: none;
+        color: $tertiary-color;
+        font-family: $secondary-font;
+        font-size: 2rem;
+        padding: 12px;
+        @include absolutePosition(50px, 60px);
+   
+    }
+}

@@ -1,0 +1,14 @@
+@mixin flexDirection($value, $align) {
+    display: flex;
+    flex-direction: $value;
+    justify-content: space-around;
+    align-items: $align;
+    
+}
+
+@mixin absolutePosition($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+  }
