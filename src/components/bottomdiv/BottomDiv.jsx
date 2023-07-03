@@ -1,8 +1,12 @@
 import "./bottomdiv.scss";
 
 const BottomDiv = () => {
-    return <div>
-        <h4>Lorem ipsum dolor sit amet.</h4>
+    return <div className="bottom__div">
+    <ul>
+        <li>Lorem</li>
+        <li>ipsum</li>
+        <li>dolor</li>
+    </ul>
     </div>
 }
 

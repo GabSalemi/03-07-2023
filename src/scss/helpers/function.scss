@@ -1,9 +1,16 @@
 @use "sass:math";
 
-$divBaseSize: 100px;
+// funzione calcolo altezza
 
-@function height($width) { 
-    @return math.div($width, $divBaseSize ) * 2
+
+@function height($width, $mult) { 
+    @return $width * $mult
 }
 
+// funzione conversione px rem
+
+$basesize: 16px;
+@function rem($px) {
+  @return math.div($px, $basesize) * 1rem;
+}
  

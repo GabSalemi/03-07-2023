@@ -1,0 +1,35 @@
+.center__div {
+    @include flexDirection(row, end);
+    @include xs {
+        background-color: $main-background;
+      }
+    
+      @include sm {
+        background-color: $secondary-background;
+      }
+    
+      @include md {
+        background-color: $main-background;
+      }
+    
+      @include lg {
+        background-color: $tertiary-background;
+      }
+    
+      @include xl {
+        background-color: $main-background;
+      }
+    .category__div {
+        color: $secondary-color;
+        font-family: $secondary-font;
+        font-size: 4rem;
+        padding: 12px;
+   
+    }
+    .text__div {
+        padding: 12px;
+        color: $white;
+        font: $tertiary-font;
+        font-size: 1.6rem;
+    }
+}

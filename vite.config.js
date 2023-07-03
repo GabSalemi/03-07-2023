@@ -12,6 +12,7 @@ export default defineConfig({
         @import "./src/scss/variables/font.scss";
         @import "./src/scss/helpers/mediaquery.scss";
         @import "./src/scss/helpers/sizemixins.scss";
+        @import "./src/scss/helpers/layoutmixins.scss";
       `
       }
     }
