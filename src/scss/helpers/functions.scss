@@ -1,0 +1,27 @@
+@use "sass:math";
+
+// funzione calcolo altezza
+
+
+@function height($width, $mult) { 
+    @return $width * $mult
+}
+
+// funzione conversione px rem
+
+$basesize: 16px;
+@function rem($px) {
+  @return math.div($px, $basesize) * 1rem;
+}
+
+@function shade($color, $percentage) {
+  @if ($percentage > 50) {
+    @return mix(#000000, $color, $percentage);
+  } @else {
+    @return mix(#ffffff, $color, $percentage);
+  }
+}
+
+@function column($col) {
+  @return math.div(100%, 12) * $col
+}

@@ -8,11 +8,25 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
+        // Various Variables 
         @import "./src/scss/variables/color.scss";
-        @import "./src/scss/variables/font.scss";
+        @import "./src/scss/variables/margin.scss";
+        @import "./src/scss/variables/border.scss";
+        @import "./src/scss/variables/padding.scss";
+
+        // Helpers
         @import "./src/scss/helpers/mediaquery.scss";
         @import "./src/scss/helpers/sizemixins.scss";
-        @import "./src/scss/helpers/layoutmixins.scss";
+        @import "./src/scss/helpers/functions.scss";
+        @import "./src/scss/helpers/extends.scss";
+
+        // Layout
+        @import "./src/scss/layout/layoutmixins.scss";
+        @import "./src/scss/layout/columns.scss";
+
+        // Typography
+        @import "./src/scss/typography/font.scss";
+        @import "./src/scss/typography/typextends.scss";
       `
       }
     }

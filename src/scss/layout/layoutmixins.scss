@@ -6,9 +6,8 @@
     
 }
 
-@mixin absolutePosition($top, $left) {
+@mixin absolutePosition($top, $right) {
     position: absolute;
     top: $top;
-    left: $left;
-    transform: translate(-50%, -50%);
+    right: $right;
   }
