@@ -1,7 +1,6 @@
-.bottom__div {
-    background-color: $tertiary-background;
-    color: $white;
-    height: 30vh;
+.navbar__div {
+    background-color: $secondary-background;
+    @include size(80%);
     position: relative;
     @include xs {
         @include flexDirection(column, start);
@@ -22,10 +21,11 @@
       @include xl {
         @include flexDirection(row-reverse, start);
       }
-    ul {
+    .row {
+        @include flexDirection(row, start);
+        gap: 12px;
         list-style: none;
-        color: $tertiary-color;
-        font-family: $secondary-font;
+        color: $secondary-color;
         font-size: 2rem;
         padding: 12px;
         @include absolutePosition(50px, 60px);
