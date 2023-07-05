@@ -10,9 +10,8 @@ export default defineConfig({
         additionalData: `
         // Various Variables 
         @import "./src/scss/variables/color.scss";
-        @import "./src/scss/variables/margin.scss";
+        @import "./src/scss/variables/spacing.scss";
         @import "./src/scss/variables/border.scss";
-        @import "./src/scss/variables/padding.scss";
 
         // Helpers
         @import "./src/scss/helpers/mediaquery.scss";
