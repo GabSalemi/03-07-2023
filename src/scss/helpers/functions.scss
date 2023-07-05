@@ -14,6 +14,8 @@ $basesize: 16px;
   @return math.div($px, $basesize) * 1rem;
 }
 
+
+
 @function shade($color, $percentage) {
   @if ($percentage > 50) {
     @return mix(#000000, $color, $percentage);

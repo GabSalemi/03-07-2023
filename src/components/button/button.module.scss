@@ -1,0 +1,53 @@
+.button {
+    @extend %clickable;
+    background-color: $main-background;
+    font-family: $secondFont;
+    font-size: rem(16px);
+    @include radius(12px, 2px, 12px, 2px);
+    
+    
+    @include xs {
+        width: 60px;
+        height: 20px;
+        &.round {
+            width: 40px;
+            height: 40px;
+            @include flexDirection(row, center);
+            @include radius(50%, 50%, 50%, 50%);
+        }
+    }
+    @include sm {
+        width: 60px;
+        height: 20px;
+        &.round {
+            width: 40px;
+            height: 40px;
+            @include flexDirection(row, center);
+            @include radius(50%, 50%, 50%, 50%);
+        }
+    }
+    @include md {
+        width: 100px;
+        height: 40px;
+        font-size: rem(16px);
+    }
+    @include lg {
+        width: 100px;
+        height: 40px;
+        font-size: rem(16px);
+    }
+    @include xl {
+        width: 100px;
+        height: 40px;
+        font-size: rem(16px);
+    }
+
+    &.label {
+        width: 100px;
+        height: 40px;
+        @include radius(12px, 2px, 12px, 2px);
+    }
+}
+
+
+

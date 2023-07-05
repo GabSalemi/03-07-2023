@@ -1,0 +1,51 @@
+.hero__section {
+    background-color: $white;
+    position: relative;
+    @include xs {
+        @include size(100%);
+    }
+    @include sm {
+        @include size(100%);
+    }
+    @include md {
+        @include size(100%);
+    }
+    @include lg {
+        @include size(100%);
+    }
+    @include xl {
+        @include size(100%);
+    }
+    
+}
+
+.video__container {
+    width: 100%;
+    height: 100%;
+    video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.text__container {
+    @include absolutePosition(30%, 0);
+    h1 {
+        margin: $textmargin;
+    }
+    p {
+        color: $fourth-color;
+        font-size: rem(20px);
+        margin: $textmargin;
+    }
+}
+
+.title {
+    @extend%maintitle
+}
+
+.button__div {
+    @include flexDirection(row, space-around);
+}
+
+

@@ -3,5 +3,13 @@
     height: $width - 20%;
   }
 
+  @mixin buttonStyle($theme) {
+    @if ($theme == "outline") {
+      background-color: $main-background;
+    } else { 
+      background-color: $secondary-background;
+
+    }
+  }
 
   

@@ -1,24 +1,29 @@
 .info__section {
-    @include size(80%);
+   
     @include flexDirection(row, end);
     @include xs {
         background-color: $main-color;
+        @include size(90%);
       }
     
       @include sm {
         background-color: $secondary-color;
+        @include size(90%);
       }
     
       @include md {
         background-color: $fourth-color;
+        @include size(80%);
       }
     
       @include lg {
         background-color: $tertiary-color;
+        @include size(70%);
       }
     
       @include xl {
         background-color: $main-color;
+        @include size(70%);
       }
     .vertical__title {
         color: $secondary-color;

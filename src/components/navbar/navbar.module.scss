@@ -1,7 +1,12 @@
 .navbar__div {
     background-color: $secondary-background;
-    @include size(80%);
-    position: relative;
+    @include radius(0, 24px, 0, 24px);
+    width: 80%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     @include xs {
         @include flexDirection(column, start);
       }
@@ -23,12 +28,15 @@
       }
     .row {
         @include flexDirection(row, start);
-        gap: 12px;
+        gap: 24px;
         list-style: none;
+        font-family: $secondFont;
         color: $secondary-color;
         font-size: 2rem;
-        padding: 12px;
-        @include absolutePosition(50px, 60px);
+        padding: $divPadding;
+        margin-right: $divmargin * 12;
+        @include absolutePosition(0, 0);
    
     }
+
 }

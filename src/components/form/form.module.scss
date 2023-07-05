@@ -1,0 +1,48 @@
+.form__div {
+    
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 100px;
+    @include radius(24px, 6px, 24px, 6px);
+    @include flexDirection(column, end);
+    @include xs {
+        background-color: $fifth-color;
+        @include size(70%);
+        border: $minelevation;
+      }
+    
+      @include sm {
+        background-color: $fifth-color;
+        @include size(70%);
+        border: $minelevation;
+      }
+    
+      @include md {
+        background-color: $fifth-color;
+        @include size(80%);
+        border: $maxelevation;
+      }
+    
+      @include lg {
+        background-color: $fifth-color;
+        @include size(90%);
+        border: $maxelevation;
+      }
+    
+      @include xl {
+        background-color: $fifth-color;
+        @include size(90%);
+        border: $minelevation;
+      }
+    }
+
+.input {
+    @extend %input;
+    &:active {
+        @extend %activeButton
+    }
+    &:hover {
+        background-color: $tertiary-background;
+        border: 2px solid $fourth-color;
+    }
+}
