@@ -1,0 +1,41 @@
+.inputContainer {
+    width: 100%;
+}
+
+.inputDiv {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    @include radius(6px, 4px, 4px, 6px);
+    padding: $textPadding;
+    margin-bottom: rem(6px);
+    &.line {
+        border: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    &.error {
+        border: 1px solid rgba(255, 0, 0, 0.5);
+    }
+    &:focus {
+        border: 1px solid $main-color;
+        box-shadow: $minelevation;
+      }
+}
+
+.label {
+    color: $main-color;
+    font-family: $secondFont;
+    display: block;
+}
+
+.errorMessage {
+    color:  rgba(255, 0, 0, 0.5);
+    display: block;
+    font-size: rem(12px);
+}
