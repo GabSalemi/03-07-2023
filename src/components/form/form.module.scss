@@ -1,5 +1,4 @@
 .form__div {
-    
     padding: 20px;
     margin: 20px;
     margin-bottom: 100px;
@@ -45,4 +44,11 @@
         background-color: $tertiary-background;
         border: 2px solid $fourth-color;
     }
+}
+
+.buttonsDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
