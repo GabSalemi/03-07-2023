@@ -9,11 +9,11 @@
     z-index: 9;
     transform: translateX(-50%);
     @include xs {
-        @include flexDirection(column, start);
+        @include flexDirection(row, start);
       }
     
       @include sm {
-        @include flexDirection(column, end);
+        @include flexDirection(row, start);
       }
     
       @include md {
@@ -21,22 +21,53 @@
       }
     
       @include lg {
-        @include flexDirection(row-reverse, end);
+        @include flexDirection(row, start);
       }
     
       @include xl {
-        @include flexDirection(row-reverse, start);
+        @include flexDirection(row, start);
       }
+    
     .row {
         @include flexDirection(row, start);
-        gap: 24px;
         list-style: none;
         font-family: $secondFont;
         color: $secondary-color;
-        font-size: rem(24px);
         padding: $divPadding;
-        margin-right: $divmargin * 12;
-        @include absolutePosition(0, 0);
+        margin-right: $divmargin;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(0, 0);
+        @include xs {
+          @include flexDirection(row, start);
+          font-size: rem(12px);
+          gap: 12px;
+        }
+      
+        @include sm {
+          @include flexDirection(row, start);
+          font-size: rem(12px);
+          gap: 12px;
+        }
+      
+        @include md {
+          @include flexDirection(row, start);
+          font-size: rem(16px);
+          gap: 16px;
+        }
+      
+        @include lg {
+          @include flexDirection(row, start);
+          font-size: rem(24px);
+          gap:24px;
+        }
+      
+        @include xl {
+          @include flexDirection(row, start);
+          font-size: rem(24px);
+          gap: 24px;
+        }
    
     }
 

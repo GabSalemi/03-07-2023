@@ -3,31 +3,31 @@
     @include flexDirection(row, end);
     @include xs {
         background-color: $main-color;
-        @include size(90%);
+        @include size(100%);
       }
     
       @include sm {
         background-color: $secondary-color;
-        @include size(90%);
+        @include size(100%);
       }
     
       @include md {
         background-color: $fourth-color;
-        @include size(80%);
+        @include size(100%);
       }
     
       @include lg {
         background-color: $tertiary-color;
-        @include size(70%);
+        @include size(100%);
       }
     
       @include xl {
         background-color: $main-color;
-        @include size(70%);
+        @include size(100%);
       }
     .vertical__title {
-        color: $secondary-color;
-       
+        color: $white;
+        font-family: $thirdFont;
         font-size: 4rem;
         padding: 12px;
    
@@ -38,4 +38,5 @@
         
         font-size: 1.6rem;
     }
+    
 }
