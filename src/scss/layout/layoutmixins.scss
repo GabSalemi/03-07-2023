@@ -11,3 +11,8 @@
     top: $top;
     right: $right;
   }
+
+  @mixin centerAbsolute($xPerc, $yPerc) {
+        transform: translateX($xPerc);
+        transform: translateY($yPerc);
+  }

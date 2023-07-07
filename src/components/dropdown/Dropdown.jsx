@@ -7,12 +7,19 @@ const Dropdown = (props) => {
     const {options, handleChange} = props || null
     const [open, setOpen] = useState(false)
     const [selected, setSelected] = useState()
+    const [openSub, setOpenSub] = useState(false)
 
 
     const changeValue = (option) => {
         handleChange(option)
         setSelected(option)
         setOpen(false)
+        
+    }
+
+    const changeValueSub = (items, index) => {
+        setOpenSub(!openSub)
+       
     }
     
 
@@ -29,7 +36,22 @@ const Dropdown = (props) => {
         {options && (
             <ul className={`${styles.options} ${open ? styles.open : ""}`}>
                 {options.products.map((option) => (
-                    <li onClick={() => changeValue(option)} className={styles.option} key={option.id}>{option.label}</li>
+                    <div className={styles.subDropdownDiv}>
+                        <li onClick={() => changeValueSub(option.items, option.id)} className={styles.option} key={option.id}>{option.label}
+                        {option.items && <FaAngleDown className={open ? styles.rightArrow : styles.icon}/>}
+                        </li>
+                        
+                        <ul className={`${styles.subDropdown} ${styles.label} ${openSub ? styles.openRight : ""}`}>
+                            {option?.items?.map((item) => 
+                            <li 
+                                className={styles.item} 
+                                key={item.id}
+                                onClick={() => changeValue(option)} 
+                            >{item.label}
+                            </li>
+                            )  }
+                        </ul>
+                    </div>
                 ))}
             </ul>
         )}

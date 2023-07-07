@@ -17,12 +17,38 @@ const Navbar = () => {
             {
                 id:2,
                 label: "Gadget",
-                value: "gadget"
+                value: "gadget",
+                items: [{
+                    id: 1,
+                    label: "Model",
+                    value: "model",
+                }, {
+                    id: 2,
+                    label: "Cards",
+                    value: "cards",
+                }, {
+                    id: 3,
+                    label: "Other",
+                    value: "other",
+                }]
             },
             {
                 id: 3,
                 label: "Other",
-                value: "Other"
+                value: "other",
+                items: [{
+                    id: 1,
+                    label: "Books",
+                    value: "books",
+                }, {
+                    id: 2,
+                    label: "Comics",
+                    value: "comics",
+                }, {
+                    id: 3,
+                    label: "Music",
+                    value: "music",
+                }]
             }
         ]
     }
