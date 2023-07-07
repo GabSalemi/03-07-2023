@@ -52,3 +52,8 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.checkboxContainer {
+  @include flexDirection(row, center);
+  width: 50%;
+}

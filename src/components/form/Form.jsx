@@ -32,8 +32,12 @@ const Form = () => {
         placeholder="Your e-mail"
         errorMessage="Your e-main is incorrect"/>
         <InputSelect label="Language"/>
+        <div className={styles.checkboxContainer}>
+            <ToggleButton type="checkbox" on={true} label={"Lorem"} checkboxSwitch={false} />
+            <ToggleButton type="radio" on={true} label={"Ipsum"} checkboxSwitch={false} />
+        </div>
         <div className={styles.buttonsDiv}>
-            <ToggleButton on={true} label={"Save your data"}/>
+            <ToggleButton type="checkbox" on={true} label={"Save your data"} checkboxSwitch={true}/>
             <Button label="Sent!" icon={<BsFillSendFill className="icon"/>} round/>
         </div>
     </form>
